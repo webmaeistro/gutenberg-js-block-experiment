@@ -1,0 +1,68 @@
+{
+  "name": "@frontkom/gutenberg-js",
+  "version": "3.0.1",
+  "description": "gutenberg-js - An extension of the Wordpress Gutenberg editor",
+  "main": "build/js/gutenberg-js.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/front/gutenberg-js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production webpack",
+    "dev": "NODE_ENV=development webpack",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "postinstall": "./scripts/install.sh",
+    "deploy": "npm run lint && npm publish --access public"
+  },
+  "homepage": "https://github.com/front/gutenberg-js#readme",
+  "bugs": {
+    "url": "https://github.com/front/gutenberg-js/issues"
+  },
+  "author": "The Frontkom Contributors",
+  "license": "GPL-2.0-or-later",
+  "keywords": [
+    "CMS",
+    "Drupal",
+    "Editor",
+    "Frontkom",
+    "Gutenberg",
+    "Page builder",
+    "WordPress",
+    "WYSIWYG"
+  ],
+  "dependencies": {
+    "react-dates": "21.8.0",
+    "tinymce": "5.5.1"
+  },
+  "devDependencies": {
+    "@wordpress/babel-plugin-makepot": "1.0.1",
+    "@wordpress/scripts": "1.2.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "7.2.3",
+    "babel-jest": "20.0.3",
+    "babel-loader": "7.1.4",
+    "babel-preset-react-app": "^3.1.1",
+    "babel-runtime": "6.26.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "4.5.2",
+    "cssnano": "4.0.3",
+    "eslint": "^5.0.1",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "extract-text-webpack-plugin": "4.0.0-beta.0",
+    "node-sass": "git://github.com/sass/node-sass.git#v4.7.0",
+    "path-replace-loader": "^2.0.0",
+    "pegjs": "0.10.0",
+    "postcss-color-function": "4.0.1",
+    "postcss-loader": "2.1.3",
+    "postcss-wrapper-loader": "0.0.2",
+    "string-replace-webpack-plugin": "^0.1.3",
+    "raw-loader": "0.5.1",
+    "sass-loader": "6.0.7",
+    "webpack": "4.8.3",
+    "webpack-cli": "2.1.3"
+  },
+  "private": false
+}
